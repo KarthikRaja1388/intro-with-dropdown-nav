@@ -249,7 +249,7 @@ body{
     }
     .title-container{
         font-size: 35px;
-        width: 19ch;
+        width: 17.5ch;
         margin-top: 162px;
     }
     .content-container{
@@ -261,6 +261,8 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 45ch;
+
     }
     .content-container p{
         align-self: center;
