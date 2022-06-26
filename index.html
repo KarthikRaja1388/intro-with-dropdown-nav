@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/845ae26aa3.js" crossorigin="anonymous"></script>
+  <title>Frontendmentor</title>
+</head>
+<body onload="changeHeroImage()">
+  <nav>
+    <ul class="start-nav-mbl logo-container">
+      <li class="logo">
+        <img src="images/logo.svg" alt="">
+      </li>
+      <li class="hamburger" onclick="toggleMainNav()">
+        <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+      </li>
+    </ul>
+    <ul class="main_nav" id="main_nav">
+        <li style="text-align:right;" id="close-btn-container"><i class="fa-solid fa-xmark" id="close-btn" onclick="toggleMainNav()"></i></li>
+        <li id="nav-item-feature" onclick="showSecNav('nav-item-feature', 'feature-sec-nav', 'nav-item-feature-arrow-img')"><a href="#">Features <span><img src="images/icon-arrow-down.svg" alt="" id="nav-item-feature-arrow-img">&nbsp;</span></a>
+            <ul class="sec-nav" id="feature-sec-nav">
+              <li><a href=""><img src="images/icon-todo.svg" alt=""><i>&nbsp;</i> Todo List</a></li>
+              <li><a href=""><img src="images/icon-calendar.svg" alt=""><i>&nbsp;</i>  Calendar</a></li>
+              <li><a href=""><img src="images/icon-reminders.svg" alt=""><i>&nbsp;</i>  Reminders</a></li>
+              <li><a href=""><img src="images/icon-planning.svg" alt=""><i>&nbsp;</i>  Planning</a></li>
+            
+            </ul>
+        </li>
+        <li id="nav-item-company" onclick="showSecNav('nav-item-company', 'company-sec-nav', 'nav-item-company-arrow-img')"><a href="#">Company <span><img src="images/icon-arrow-down.svg" alt="" id="nav-item-company-arrow-img">&nbsp;</span></a>
+          <ul class="sec-nav" id="company-sec-nav">
+            <li><a href="">History</a></li>
+            <li><a href="">Our Team</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="">Careers</a></li>
+        <li><a href="" class="about">About</a></li>
+        <li class="login"><a href="">Login</a></li>
+        <li class="register"><a href="" >Register</a></li>
+    </ul>
+  </nav>
+  <main class="wrapper">
+    <section class="image-container">
+    </section>
+    <section class="title-container">
+      <h1>Make remote work</h1>
+    </section>
+    <section class="content-container">
+      <p>Get your team in sync, no matter your location. 
+        Streamline precesses, create team rituals, and watch your
+        productivity soar.
+      </p>
+    </section>
+    <section class="button-container">
+      <a href="#" class="btn-learn-more">Learn more</a>
+    </section>
+    <section class="client-container">
+      <img src="images/client-databiz.svg" alt="" >
+      <img src="images/client-audiophile.svg" alt="" >
+      <img src="images/client-meet.svg" alt="" >
+      <img src="images/client-maker.svg" alt="" >
+    </div>
+    <div id="overlay">
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
