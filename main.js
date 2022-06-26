@@ -17,14 +17,3 @@ function showSecNav(primary_nav_item, secondary_nav, arrow){
 }
     
 
-function changeHeroImage(){
-    var screen_width = window.screen.availWidth;
-    if(screen_width <= 375){
-        document.getElementById('hero-img').setAttribute('src', 'images/image-hero-mobile.png');
-    }else{
-        document.getElementById('hero-img').setAttribute('src', 'images/image-hero-desktop.png');
-
-    }
-
-
-}
