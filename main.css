@@ -142,7 +142,7 @@ body{
         grid-row: 4 / 5;
         text-align: center;
         margin-top: 20px;
-    }
+    }> What did you find difficult while building the project?
     .btn-learn-more{
         text-decoration: none;
         background-color: var(--color-black);
@@ -178,7 +178,7 @@ body{
         width: 90%;
         display: flex;
         margin: auto;
-        padding: 10px 0px;
+        padding: 20px 0px;
     } 
     .logo-container{
         width: 150px;
